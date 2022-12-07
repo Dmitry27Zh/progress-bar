@@ -1,0 +1,12 @@
+.progress-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  width: min(800px, 100%);
+  min-height: 3em;
+  color: #ffffff;
+  background: #111111;
+  border-radius: 1.5em;
+}
+
+.progress-bar::before {
+  content: attr(data-label);
+}

@@ -1,0 +1,26 @@
+@import './modules/progress-bar.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+}
+
+.container {
+  padding: 0 20px;
+}
