@@ -1,12 +1,21 @@
 .progress-bar {
+  --width: 5;
   font-family: Arial, Helvetica, sans-serif;
   width: min(800px, 100%);
-  min-height: 3em;
+  margin: 0 auto;
+  padding: 0.5em;
   color: #ffffff;
   background: #111111;
   border-radius: 1.5em;
 }
 
 .progress-bar::before {
+  display: flex;
+  align-items: center;
+  width: clamp(2em, var(--width, 0) * 1%, 100%);
+  min-height: 2em;
+  padding: 0.5em;
+  background: #069;
+  border-radius: 1.5em;
   content: attr(data-label);
 }

@@ -11,16 +11,21 @@ html {
 }
 
 body {
-  min-height: 100%;
-  margin: 0;
-}
-
-body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background: #eeeeee;
 }
 
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
+  width: 100%;
   padding: 0 20px;
 }
